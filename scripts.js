@@ -147,7 +147,7 @@ function handleSearchFormSubmit(event, searchBarId) {
   const searchBar = document.getElementById(searchBarId);
   const searchValue = searchBar.value.trim();
   if (searchValue) {
-    window.location.href = `index.html?search=${encodeURIComponent(searchValue)}`;
+    window.location.href = `videos.html?search=${encodeURIComponent(searchValue)}`;
   }
 }
 
