@@ -171,3 +171,38 @@ if (addVideoButton) {
     window.location.href = "add-video.html";
   });
 }
+
+
+
+function changeSearchBarPlaceholder() {
+  const searchBar = document.getElementById('homeSearchBar');
+  if (!searchBar) {
+    return;
+  }
+
+  const placeholderTexts = [
+    "Search for 'explosion'",
+    "Search for 'tornado'",
+    "Search for 'eartquake'",
+    "Search for 'tsunami'",
+    "Search for 'meteor'",
+    "Search for 'nuclear'",
+    "Search for 'hyperdrive'",
+    "Search for 'thunder'",
+    "Search for 'gravity'",
+    "Search for 'volcano'",
+    "Search for 'slowmo'",
+    "Search for 'shockwave'"
+  ];
+  let currentIndex = 0;
+
+  function changePlaceholder() {
+    const newPlaceholder = placeholderTexts[currentIndex];
+    searchBar.setAttribute('placeholder', newPlaceholder);
+    currentIndex = (currentIndex + 1) % placeholderTexts.length;
+  }
+
+  setInterval(changePlaceholder, 1500);
+}
+
+document.addEventListener('DOMContentLoaded', changeSearchBarPlaceholder);
