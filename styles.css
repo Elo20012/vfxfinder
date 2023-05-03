@@ -36,7 +36,6 @@ main {
 
 
 
-
 #logo-link {
   display: inline-block;
   text-decoration: none;
@@ -46,6 +45,7 @@ main {
   border-radius: 0;
   transition: color 0.3s;
 }
+
 
 
 #logo-link:hover {
@@ -412,11 +412,34 @@ h4 {
 }
 
 
-@media (min-width: 1200px) {
-  .video-container {
-    grid-template-columns: repeat(9, 1fr);
+@media (max-width: 767px) {
+  .header-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .search-container {
+    position: static;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .add-video-button {
+    position: static;
+    transform: translateY(0);
+    margin-top: 0;
+    order: 3;
+    display: none;
+  }
+
+  #logo-link {
+    display: none;
   }
 }
+
+
+
 
 
 .video-container img {
