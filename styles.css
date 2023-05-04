@@ -286,12 +286,11 @@ header {
   border-radius: 50px;
   outline: none;
   box-sizing: border-box;
-  line-height: 30px;	
-  position: fixed;
-  margin-bottom: 16px;
+  line-height: 30px;   
   transition: border-color 0.3s, box-shadow 0.3s;
   align-self: center;
 }
+
 
 
 .index-search-bar::placeholder {
@@ -375,8 +374,22 @@ h4 {
 
 
 .video-row {
-    padding: 1rem 2rem;
+  padding: 1rem 2rem;
+  overflow-y: scroll;
+  max-height: calc(100vh - 60px);
+  position: relative;
 }
+
+/* Hide scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+.video-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.video-row {
+  scrollbar-width: none;
+}
+
 
 
 .video-container {
@@ -385,6 +398,7 @@ h4 {
   grid-gap: 1rem;
   margin-top: 60px;
 }
+
 
 
 /* Add this to style the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
@@ -473,7 +487,7 @@ h4 {
 
 .search-container {
   position: fixed;
-  top: 20px;
+  top: 20px;  
   left: 0;
   right: 0;
   display: flex;
