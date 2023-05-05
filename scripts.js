@@ -183,7 +183,7 @@ function changeSearchBarPlaceholder() {
   const placeholderTexts = [
     "Search for 'explosion'",
     "Search for 'tornado'",
-    "Search for 'eartquake'",
+    "Search for 'earthquake'",
     "Search for 'tsunami'",
     "Search for 'meteor'",
     "Search for 'nuclear'",
