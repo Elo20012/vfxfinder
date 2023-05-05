@@ -55,19 +55,28 @@ main {
 }
 
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+.index-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
 	color: #E492F5;
 	letter-spacing: -3px;
-    margin: 0;
-    font-weight: 300; /* Montserrat Light */
+  font-weight: 300; /* Montserrat Light */
+}
+
+.videos-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+	color: #E492F5;
+	letter-spacing: -3px;
+  margin-left: 35px;
+  font-weight: 300; /* Montserrat Light */
 }
 
 
+
 h2 {
-    font-size: 24px;
-    margin: 1rem 0;
+  font-size: 24px;
+  margin: 1rem 0;
 }
 
 
@@ -239,17 +248,13 @@ a:visited {
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   backdrop-filter: blur(10px);
   background-color: rgba(228, 146, 245, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: flex;
-  padding-top: 10px;
   justify-content: center;
-  padding: 0 20px;
   height: 60px;
 }
 
@@ -277,7 +282,7 @@ header {
 .index-search-bar {
   width: 300px;
   height: 30px;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem; /* padding for the placeholder and text input */
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
@@ -292,6 +297,7 @@ header {
 }
 
 
+
 .index-search-bar::placeholder {
   color: #E492F5;
   opacity: 0.6;
@@ -299,24 +305,42 @@ header {
 
 
 .searchBarWrapper {
-  max-width: 400px;
-  width: 100%;
-  padding: 0 20px;
+  display: inline-block;
 }
 
 
 .header-content {
   display: flex;
   flex-grow: 1;
-  justify-content: center; /* Center the search bar horizontally */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.center-side {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.right-side {
+  display: flex;
   align-items: center;
 }
 
 
+
 .logo-container {
   flex: 1;
-  text-align: left; /* Add this line to move the title back to the left */
+  text-align: left;
 }
+
 
 
 .inspiration-text {
@@ -356,7 +380,7 @@ h4 {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 15px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -485,15 +509,14 @@ h4 {
 
 
 .search-container {
-  position: fixed;
-  top: 20px;  
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 10;
+  flex: 1;
+  text-align: center;
 }
 
+.button-container {
+  flex: 1;
+  text-align: right;
+}
 
 body {
   display: flex;
