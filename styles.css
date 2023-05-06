@@ -26,14 +26,13 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100 * var(--vh)); /* Updated height */
   background-image: radial-gradient(circle at center, #574F67 0.5px, transparent 1px);
   background-size: 20px 20px;
   background-position: 0 0;
   filter: blur(10px);
   z-index: -1;
 }
-
 
 
 #logo-link {
@@ -110,12 +109,6 @@ h3 {
 .home-content h1 {
   font-size: 4rem;
   line-height: 1;
-}
-
-@media (max-width: 767px) {
-  .home-content h1 {
-    font-size: 3rem;
-  }
 }
 
 .home-vfx-finder {
@@ -448,18 +441,41 @@ h4 {
   scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
 }
 
+@media (max-width: 767px) {
+  .home-content .searchBar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-content h1 {
+    font-size: 3rem;
+  }
+}
 
 @media (max-width: 767px) {
   .header-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-side,
+  .center-side,
+  .right-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
   }
 
   .search-container {
     position: static;
     margin-top: 0;
     order: 2;
+    margin-bottom: 10px;
   }
 
   .add-video-button {
@@ -473,7 +489,13 @@ h4 {
   #logo-link {
     display: none;
   }
+
+  header {
+    backdrop-filter: blur(15px);
+    background-color: rgba(228, 146, 245, 0.2);
+  }
 }
+
 
 
 
@@ -561,12 +583,6 @@ body {
   width: 50%;
   max-width: 500px;
   margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-  .home-content .searchBar {
-    width: 80%;
-  }
 }
 
 .video-popup {
@@ -728,6 +744,6 @@ a[href="https://www.buymeacoffee.com/eliaswillnat"] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100 * var(--vh)); /* Updated height */
   z-index: -1;
 }

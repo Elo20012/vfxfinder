@@ -47,7 +47,21 @@
     particlesJS.load('particles-js', 'particles.json', function() {
       console.log('particles.js loaded');
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('homeSearchBar').focus();
+    });
+    
+    const setViewportHeight = () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+  
+    window.addEventListener('resize', setViewportHeight);
+    document.addEventListener('DOMContentLoaded', setViewportHeight);
   </script>
+  
+  
   <script src="scripts.js"></script>
 </body>
 </html>
