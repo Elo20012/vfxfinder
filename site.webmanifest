@@ -1,0 +1,21 @@
+{
+  "name": "VFXFinder",
+  "short_name": "VFXFinder",
+  "description": "VFXFinder simplifies exploring movie and series visual effects, providing breakdowns and project inspiration.",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e492f5"
+}
