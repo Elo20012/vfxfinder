@@ -73,9 +73,9 @@ function openVideoPopup(video, allVideos) {
 	relatedVideosContainer.style.marginTop = '20px';
 
   relatedVideos.forEach((relatedVideo, index) => {
-	console.log('Related video index:', index, relatedVideo); // Add this line
+	console.log('Related video index:', index, relatedVideo);
 	const relatedVideoWrapper = document.createElement('div');
-	relatedVideoWrapper.style.width = 'calc(24% - 10px)'; // Change 25% to 24%
+	relatedVideoWrapper.style.width = 'calc(24% - 10px)';
 	relatedVideoWrapper.style.marginRight = '10px';
 	relatedVideoWrapper.style.marginBottom = '10px';
 

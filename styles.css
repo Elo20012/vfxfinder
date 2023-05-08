@@ -26,7 +26,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100 * var(--vh)); /* Updated height */
+  height: calc(100 * var(--vh));
   background-image: radial-gradient(circle at center, #574F67 0.5px, transparent 1px);
   background-size: 20px 20px;
   background-position: 0 0;
@@ -68,7 +68,7 @@ main {
 	color: #E492F5;
 	letter-spacing: -3px;
   margin-left: 35px;
-  font-weight: 300; /* Montserrat Light */
+  font-weight: 300;
 }
 
 
@@ -123,7 +123,7 @@ h3 {
 
 
 .vfx {
-  font-weight: 700; /* Montserrat Light */
+  font-weight: 700;
 }
 
 
@@ -478,13 +478,13 @@ h4 {
     margin-top: 0;
     order: 2;
     margin-bottom: 10px;
-    width: 100%; /* Add this line */
+    width: 100%;
   }
 
   #search-form {
     width: 100%;
-    display: flex; /* Add this line */
-    justify-content: center; /* Add this line */
+    display: flex;
+    justify-content: center;
   }
 
   .index-search-bar {
@@ -674,14 +674,13 @@ body {
   max-height: 80vh;
   overflow-y: auto;
   padding: 1rem;
-  background-color: rgba(228, 146, 245, 0.1); /* Updated background-color */
+  background-color: rgba(228, 146, 245, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
-/* Update your scrollbar styles for the popup-content class */
 .popup-content::-webkit-scrollbar {
   width: 10px;
 }
@@ -760,6 +759,6 @@ a[href="https://www.buymeacoffee.com/eliaswillnat"] {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100 * var(--vh)); /* Updated height */
+  height: calc(100 * var(--vh));
   z-index: -1;
 }

@@ -25,22 +25,19 @@ document.addEventListener('DOMContentLoaded', function () {
 function createVideoElements(videos) {
   const videoContainer = document.querySelector('.video-container');
 
-  // Reverse the order of the videos array
   const reversedVideos = videos.slice().reverse();
 
-  // Iterate through the reversedVideos array instead of videos
   reversedVideos.forEach(video => {
     const videoThumbnail = document.createElement('a');
     videoThumbnail.href = '#';
 
-    // Update the onclick assignment here:
     videoThumbnail.onclick = function (event) {
       event.preventDefault();
-      openVideoPopup(video, videos); // Pass the videos array as the second argument
+      openVideoPopup(video, videos);
     };
 
     videoThumbnail.dataset.tags = JSON.stringify(video.dataTags);
-    videoThumbnail.dataset.videoId = video.id; // Add the data-video-id attribute
+    videoThumbnail.dataset.videoId = video.id;
     videoThumbnail.className = 'video-thumbnail';
 
     const staticImage = document.createElement('img');
@@ -129,9 +126,9 @@ if (homeVfxFinder) {
 }
 
 function handleSearch(event) {
-  event.preventDefault(); // Prevent the page from refreshing
+  event.preventDefault();
   const searchBar = document.getElementById("searchBar");
-  const searchTerm = searchBar.value.trim(); // Get the search term from the input field
+  const searchTerm = searchBar.value.trim();
 
   if (searchTerm) {
     console.log("Searching for:", searchTerm);
