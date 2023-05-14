@@ -16,7 +16,7 @@ Visit [vfxfinder.com](https://vfxfinder.com) to access the website and start exp
 
 If you would like to contribute to the project, please submit an issue or create a pull request with your proposed changes.
 To keep this website as free as possible, I won't use Ads nor Servers.
-Please be patient if your video hasn't appeared yet [if you suggested one](https://vfxfinder.com/add-video.html).
+Please be patient if your video hasn't appeared yet if you [suggested one](https://vfxfinder.com/add-video.html).
 You can also [buy me a coffee](https://www.buymeacoffee.com/eliaswillnat) :)
 
 ## License
