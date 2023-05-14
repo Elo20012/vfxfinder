@@ -435,7 +435,7 @@ h4 {
 }
 
 
-/* Add this to style the scrollbar for Firefox */
+/* Scrollbar for Firefox */
 .video-container {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
@@ -443,7 +443,7 @@ h4 {
 
 @media (max-width: 1150px) {
   .popup-content {
-    width: 100%; /* Take full width when the viewport width is below 1150px */
+    width: 100%;
   }
 }
 
@@ -519,7 +519,8 @@ h4 {
   }
 
   .popup-content {
-    width: 90vw;
+    backdrop-filter: blur(15px);
+    background-color: rgba(228, 146, 245, 0.2);
   }
 }
 
@@ -528,7 +529,7 @@ h4 {
 
 
 .video-container img {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     cursor: pointer;
     border-radius: 5px;
