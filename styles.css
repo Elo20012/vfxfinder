@@ -441,16 +441,9 @@ h4 {
   scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
 }
 
-
-@media (max-width: 767px) {
-  .home-content .searchBar {
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .home-content h1 {
-    font-size: 3rem;
+@media (max-width: 1150px) {
+  .popup-content {
+    width: 100%; /* Take full width when the viewport width is below 1150px */
   }
 }
 
@@ -512,6 +505,22 @@ h4 {
     backdrop-filter: blur(15px);
     background-color: rgba(228, 146, 245, 0.2);
   }
+
+  .home-content .searchBar {
+    width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .related-video-wrapper {
+    width: calc(50% - 10px);
+  }
+
+  .popup-content {
+    width: 90vw;
+  }
 }
 
 
@@ -546,6 +555,22 @@ h4 {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
+
+.related-video-wrapper {
+  width: calc(24% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.related-video-thumbnail {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
 
 
 .search-container {
@@ -640,11 +665,6 @@ body {
 }
 
 
-.breakdown-link:visited {
-    color: #E492F5;
-}
-
-
 .video-popup-video {
   border: none;
 }
@@ -666,17 +686,44 @@ body {
   border-radius: 5px;
 }
 
+.breakdown-link:visited {
+  color: #E492F5;
+}
+
 
 .popup-content {
-  max-height: 80vh;
+  width: 700px; /* Set a fixed width for the popup-content */
+  max-width: 100%; /* Make sure it doesn't exceed the viewport width */
   overflow-y: auto;
   padding: 1rem;
   background-color: rgba(228, 146, 245, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
+.video-container.popup-video-container {
+  width: calc(100% - 2rem);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .popup-content::-webkit-scrollbar {
   width: 10px;

@@ -17,17 +17,31 @@ function openVideoPopup(video, allVideos) {
 
   const popupContent = document.createElement('div');
   popupContent.className = 'popup-content';
-	
+
+  const videoResponsive = document.createElement('div');
+  videoResponsive.className = 'video-responsive';
+
   const videoElement = document.createElement('iframe');
   videoElement.className = 'video-popup-video';
-  videoElement.width = 1120;
-  videoElement.height = 630;
   videoElement.src = video.href.replace('watch?v=', 'embed/') + '?autoplay=1';
   videoElement.frameBorder = 0;
-  videoElement.allow =
-    'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  videoElement.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
   videoElement.allowFullscreen = true;
   videoElement.id = 'main-video';
+
+  function setVideoSize() {
+    const aspectRatio = 9 / 16;
+    videoElement.width = popupContent.clientWidth;
+    videoElement.height = popupContent.clientWidth * aspectRatio;
+  }  
+  
+  
+
+  setVideoSize();
+
+  videoElement.addEventListener('load', setVideoSize);
+  window.addEventListener('resize', setVideoSize);
+
   videoElement.addEventListener('load', () => {
 	relatedVideosContainer.style.width = `${videoElement.clientWidth}px`;
   });
@@ -75,6 +89,7 @@ function openVideoPopup(video, allVideos) {
   relatedVideos.forEach((relatedVideo, index) => {
 	console.log('Related video index:', index, relatedVideo);
 	const relatedVideoWrapper = document.createElement('div');
+  relatedVideoWrapper.className = 'related-video-wrapper';
 	relatedVideoWrapper.style.width = 'calc(24% - 10px)';
 	relatedVideoWrapper.style.marginRight = '10px';
 	relatedVideoWrapper.style.marginBottom = '10px';
@@ -86,6 +101,7 @@ function openVideoPopup(video, allVideos) {
 	
     const relatedVideoThumbnail = document.createElement('img');
     relatedVideoThumbnail.src = relatedVideo.src;
+    relatedVideoThumbnail.className = 'related-video-thumbnail';
 	relatedVideoThumbnail.style = 'width: 100%; height: auto; cursor: pointer; border-radius: 10px;';
     relatedVideoThumbnail.onclick = () => {
       closeVideoPopup();
@@ -99,7 +115,8 @@ function openVideoPopup(video, allVideos) {
   relatedVideosContainer.style.display = 'flex';
   relatedVideosContainer.style.flexWrap = 'wrap';
 
-  popupContent.appendChild(videoElement);
+  videoResponsive.appendChild(videoElement);
+  popupContent.appendChild(videoResponsive);
   popupContent.appendChild(videoTitle);
   popupContent.appendChild(breakdownList);
   popupContent.appendChild(movieTitleElement);
