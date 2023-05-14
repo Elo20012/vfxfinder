@@ -81,7 +81,7 @@ function openVideoPopup(video, allVideos) {
   }
 
 	const relatedVideosContainer = document.createElement('div');
-	relatedVideosContainer.className = 'video-container popup-video-container';
+	relatedVideosContainer.className = 'video-container popup-video-container related-videos-container';
 	relatedVideosContainer.style.display = 'flex';
 	relatedVideosContainer.style.flexWrap = 'wrap';
 	relatedVideosContainer.style.marginTop = '20px';

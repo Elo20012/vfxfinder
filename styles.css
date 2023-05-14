@@ -416,8 +416,15 @@ h4 {
 }
 
 
+.related-videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 0.5rem;
+  margin-top: 50px;
+}
 
-/* Add this to style the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+
+/* Scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
 .video-container::-webkit-scrollbar {
   width: 10px;
 }
