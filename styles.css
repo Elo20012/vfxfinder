@@ -108,7 +108,7 @@ h3 {
 
 .home-content h1 {
   font-size: 4rem;
-  line-height: 1;
+  line-height: 0; 
 }
 
 .home-vfx-finder {
@@ -335,29 +335,38 @@ header {
 }
 
 
-
 .inspiration-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-weight: 300;
 }
 
 
 h4 {
   font-size: 1.2rem;
-  margin: 1rem 0;
 }
 
 
 .breakdown-link {
-    text-decoration: none;
+  text-decoration: underline;
 }
-
 
 .breakdown-link:hover {
   color: #0E0325 !important;
   background-color: #E492F5;
+  text-decoration: none;
 }
+
+
+.videos-link {
+  color: #EFB4FB;
+  text-decoration: underline;
+}
+
+.videos-link:hover {
+  color: #0E0325 !important;
+  background-color: #E492F5;
+  text-decoration: none;
+}
+
 
 
 .add-video-button {
@@ -768,7 +777,7 @@ body {
 
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -776,6 +785,7 @@ body {
   background-color: #0E0325;
   color: #E492F5;
   font-size: 14px;
+  z-index: 999;
 }
 
 
