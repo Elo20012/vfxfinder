@@ -519,6 +519,7 @@ h4 {
   }
 
   .popup-content {
+    width: 100%;
     backdrop-filter: blur(15px);
     background-color: rgba(228, 146, 245, 0.2);
   }
