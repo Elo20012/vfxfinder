@@ -698,6 +698,7 @@ body {
   max-width: 100%; /* Make sure it doesn't exceed the viewport width */
   overflow-y: auto;
   padding: 1rem;
+  -webkit-backdrop-filter: blur(5px);
   background-color: rgba(228, 146, 245, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
