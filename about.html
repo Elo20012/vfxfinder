@@ -17,17 +17,6 @@
 </head>
 <body>
   <div id="particles-js"></div>
-  <script>
-    fetch('videoData.json')
-      .then(response => response.json())
-      .then(data => {
-        const videoCount = data.length;
-        document.getElementById('video-count').textContent = videoCount;
-      })
-      .catch(error => {
-        console.error('Error fetching JSON data:', error);
-      });
-  </script>
 
 <a href="https://www.buymeacoffee.com/eliaswillnat"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=eliaswillnat&button_colour=e492f5&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
   
@@ -36,15 +25,22 @@
       <h1 class="index-title"><span class="vfx">VFX</span>FINDER</h1>
     </div>  
     <h3 class="center-text inspiration-text">Find your Inspiration. Explore VFX Breakdowns.</h3>
-    <form id="home-search-form">
-      <input class="searchBar home-search-bar" type="text" id="homeSearchBar" placeholder="Search...">
-    </form>
-    <p class="video-count-text"><span id="video-count"></span> <a href="videos.html" class="videos-link">videos</a></p>
+    <p class="center-text about-text">
+        The goal of this website is to help VFX Artists to find inspirations quickly.
+        Here is nothing to download, but just for the start of your creations, to find references.<br>
+        I love creating VFX Videos myself so I wanted to stop using all those YouTube playlists and influenced search results.<br>
+        Using simple HTML, CSS, JavaScript and JSON Data and with the help of ChatGPT I was able to create this website.<br>
+        Inspired by the website "sakugabooru.com", I decided to solve that issue and any VFX Artist can participate with a link to your portfolio (your name with hyperlink will be listed below)<br>
+        To keep this website free, I will not use any Ads nor Servers. I use a simple JSON file to insert videos, so please be patient if your video doesn't appear yet.<br><br>
+        Thank you for using vfxfinder.com,<br>
+        If you need to contact me by email, <a href="mailto:elias.willnat@gmail.com">click here</a>.<br><br>
+        Elias Willnat
+      </p>
   </main>
 
-  <footer class="footer">
-    &copy;2023 by<a href="about.html" class="breakdown-link" rel="noopener noreferrer">Elias Willnat</a>
-  </footer>
+<footer class="footer">
+  &copy;2023 by<a href="about.html" class="breakdown-link" rel="noopener noreferrer">Elias Willnat</a>
+</footer>
 
 
   <script>
