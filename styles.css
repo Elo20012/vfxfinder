@@ -825,17 +825,19 @@ a[href="https://www.buymeacoffee.com/eliaswillnat"] {
   padding: 20px;
 }
 
-.scrollable-text {
-  max-height: 80vh;
-  overflow-y: auto;
-  padding-right: 1rem;
+.scrollable-content {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding-top: 8rem;
 }
 
-.scrollable-text::-webkit-scrollbar {
+.scrollable-content::-webkit-scrollbar {
   display: none;
 }
 
-.scrollable-text {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.about-text {
+  padding-bottom: 10rem;
 }
+
+
