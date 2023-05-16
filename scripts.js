@@ -191,12 +191,11 @@ function changeSearchBarPlaceholder() {
     "Search for 'slowmo'",
     "Search for 'shockwave'"
   ];
-  let currentIndex = 0;
 
   function changePlaceholder() {
-    const newPlaceholder = placeholderTexts[currentIndex];
+    const randomIndex = Math.floor(Math.random() * placeholderTexts.length);
+    const newPlaceholder = placeholderTexts[randomIndex];
     searchBar.setAttribute('placeholder', newPlaceholder);
-    currentIndex = (currentIndex + 1) % placeholderTexts.length;
   }
 
   setInterval(changePlaceholder, 1500);
