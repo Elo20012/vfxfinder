@@ -185,7 +185,7 @@
     "https://youtu.be/pmC4ReXa62A",
     "https://youtu.be/3hODVXVVzCI?t=958"
   ],
-	"movieTitle": "2012"
+	"movieTitle": "2012 (film)"
   },
 
 
@@ -322,56 +322,5 @@
     "src": "https://img.youtube.com/vi/Vkbq-CwacjQ/maxresdefault.jpg",
     "breakdownLinks": [],
     "movieTitle": "Interstellar"
-  },
-
-  {
-    "id": 8,
-    "href": "https://www.youtube.com/watch?v=-HmWDdmTAE8",
-    "dataTags": [
-      "clones",
-      "soldiers",
-      "crowd",
-      "laser",
-      "beam",
-      "smoke",
-      "red",
-      "light",
-      "destruction",
-      "annihilation",
-      "planet",
-      "explosion",
-      "debris",
-      "starkiller",
-      "base",
-      "firing",
-      "fire",
-      "starwarstheforceawakens",
-      "commander",
-      "forest",
-      "ice",
-      "superweapon",
-      "firstorder",
-      "emperor",
-      "imperial",
-      "sun",
-      "darkenergy",
-      "core",
-      "magneticfield",
-      "phantomenergy",
-      "subhyperspace",
-      "civilisation",
-      "civilization",
-      "shockwave",
-      "impact",
-      "dust",
-      "blast",
-      "sky",
-      "universe"
-    ],
-    "src": "https://img.youtube.com/vi/-HmWDdmTAE8/mqdefault.jpg",
-    "breakdownLinks": [
-      ""
-    ],
-    "movieTitle": "Star Wars: The Force Awakens"
   }
 ]
