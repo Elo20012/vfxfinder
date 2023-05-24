@@ -1,6 +1,6 @@
 # VFXFinder
 
-Welcome to the VFXFinder repository! VFXFinder is a platform designed to help you discover and explore live action visual effects references and their breakdowns, making it easier to find inspiration for your own projects.
+Welcome to the VFXFinder repository! VFXFinder is a platform designed to help you discover and explore live-action visual effects references and their breakdowns, making it easier to find inspiration for your own projects.
 
 ## Features
 
