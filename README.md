@@ -1,12 +1,12 @@
 # VFXFinder
 
-Welcome to the VFXFinder repository! VFXFinder is a platform designed to help you discover and explore visual effects references and their breakdowns, making it easier to find inspiration for your own projects.
+Welcome to the VFXFinder repository! VFXFinder is a platform designed to help you discover and explore live action visual effects references and their breakdowns, making it easier to find inspiration for your own projects.
 
 ## Features
 
 - Browse a collection of visual effects reference videos with breakdown.
-- Search for specific VFX videos (explosion, gravity, earthquake) or movie name using the search bar.
-- Add new videos to the collection using Google Forms (I will add them as soon as I can).
+- Search for specific VFX keywords (explosion, gravity, earthquake) or a movie name using the search bar.
+- Add new videos to the collection using the [Google Forms](https://vfxfinder.com/add-video.html) (I will add them as soon as I can).
 
 ## Usage
 
