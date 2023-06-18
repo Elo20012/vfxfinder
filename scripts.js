@@ -187,8 +187,12 @@ function changeSearchBarPlaceholder() {
     "Search for 'hyperdrive'",
     "Search for 'thunder'",
     "Search for 'gravity'",
+    "Search for 'destruction'",
+    "Search for 'debris'",
+    "Search for 'smoke'",
     "Search for 'volcano'",
     "Search for 'slowmo'",
+    "Search for 'endoftheworld'",
     "Search for 'shockwave'"
   ];
 
